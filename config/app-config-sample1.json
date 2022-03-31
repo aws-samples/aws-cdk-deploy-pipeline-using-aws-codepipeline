@@ -1,0 +1,52 @@
+{
+    "Project": {
+        "Name": "Pipeline",
+        "Stage": "Sample1",
+        "Account": "75157*******",
+        "Region": "us-east-2",
+        "Profile": "cdk-demo"
+    },
+
+    "Stack": {
+        "Approach1Pipeline": {
+            "Name": "Approach1PipelineStack"
+        },
+        "Approach2Pipeline": {
+            "Name": "Approach2PipelineStack"
+        },
+        "Approach3Pipeline": {
+            "Name": "Approach3PipelineStack",
+
+            "PipelineName": "Approach3Pipeline",
+
+            "ActionFlow": [
+                {
+                    "Name": "GitClone",
+                    "Stage": "SourceStage",
+                    "Kind": "SourceCodeCommit",
+                    "Enable": true,
+
+                    "Detail": {
+                        "RepositoryName": "sample-repo",
+                        "BranchName": "release_cicd"
+                    }
+                },
+                {
+                    "Name": "DeployAllStacks",
+                    "Stage": "DevDeployStage",
+                    "Kind": "BuildCodeBuild",
+                    "Enable": true,
+                    "Detail": {
+                        "AppConfigFile": "config/app-config-sample1.json",
+                        "BuildDeployStacks": {
+                            "StackNameList": ["Sample1Service1Stack"]
+                        }
+                    }
+                }
+            ]
+        },
+        "Sample1Service1": {
+            "Name": "Sample1Service1Stack"
+        }
+    }
+}

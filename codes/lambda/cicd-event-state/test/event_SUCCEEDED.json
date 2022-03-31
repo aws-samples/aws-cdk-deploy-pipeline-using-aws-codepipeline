@@ -1,0 +1,40 @@
+{
+    "version": "0",
+    "id": "e75f110d-13c2-5780-d29b-6822d4ad4598",
+    "detail-type": "CodePipeline Action Execution State Change",
+    "source": "aws.codepipeline",
+    "account": "***********",
+    "time": "2022-03-19T16:47:28Z",
+    "region": "ap-northeast-2",
+    "resources": [
+        "arn:aws:codepipeline:ap-northeast-2:***********:LiveProtoDev-AllStackDeploy"
+    ],
+    "detail": {
+        "pipeline": "LiveProtoDev-AllStackDeploy",
+        "execution-id": "b00f02d1-09ea-4afb-a7af-9359d305397b",
+        "stage": "DevDeployStage2",
+        "execution-result": {
+            "external-execution-url": "https://console.aws.amazon.com/codebuild/home?region=ap-northeast-2#/builds/SimplePipelineChannelBacken-4HYYzMl5gpfh:9776da58-f174-4e8d-9d35-02eb49d3a5f8/view/new",
+            "external-execution-id": "SimplePipelineChannelBacken-4HYYzMl5gpfh:9776da58-f174-4e8d-9d35-02eb49d3a5f8"
+        },
+        "output-artifacts": [
+            {
+                "name": "ChannelBackendBuildOutput",
+                "s3location": {
+                    "bucket": "liveprotodev-maincicdpip-simplepipelinecicdpipeli-15ripklll31ac",
+                    "key": "LiveProtoDev-AllStac/ChannelBac/e6b3vDU"
+                }
+            }
+        ],
+        "action": "ChannelBackend",
+        "state": "SUCCEEDED",
+        "region": "ap-northeast-2",
+        "type": {
+            "owner": "AWS",
+            "provider": "CodeBuild",
+            "category": "Build",
+            "version": "1"
+        },
+        "version": 5.0
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "version": "0",
+    "id": "a88c9e57-54d0-56da-f578-c9267dce6ca0",
+    "detail-type": "CodePipeline Action Execution State Change",
+    "source": "aws.codepipeline",
+    "account": "***********",
+    "time": "2022-03-19T16:44:21Z",
+    "region": "ap-northeast-2",
+    "resources": [
+        "arn:aws:codepipeline:ap-northeast-2:***********:LiveProtoDev-AllStackDeploy"
+    ],
+    "detail": {
+        "pipeline": "LiveProtoDev-AllStackDeploy",
+        "execution-id": "b00f02d1-09ea-4afb-a7af-9359d305397b",
+        "stage": "DevDeployStage2",
+        "action": "ChannelBackend",
+        "input-artifacts": [
+            {
+                "name": "SourceOutput",
+                "s3location": {
+                    "bucket": "liveprotodev-maincicdpip-simplepipelinecicdpipeli-15ripklll31ac",
+                    "key": "LiveProtoDev-AllStac/SourceOutp/vvsz3Pz"
+                }
+            }
+        ],
+        "state": "STARTED",
+        "region": "ap-northeast-2",
+        "type": {
+            "owner": "AWS",
+            "provider": "CodeBuild",
+            "category": "Build",
+            "version": "1"
+        },
+        "version": 5.0
+    }
+}

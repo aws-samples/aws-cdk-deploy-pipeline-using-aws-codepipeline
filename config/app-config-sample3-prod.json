@@ -1,0 +1,15 @@
+{
+    "Project": {
+        "Name": "HelloWorld",
+        "Stage": "Prod",
+        "Account": "75157*******",
+        "Region": "ap-northeast-2",
+        "Profile": "cdk-demo"
+    },
+
+    "Stack": {
+        "Sample3Service1": {
+            "Name": "Sample3Service1Stack"
+        }
+    }
+}

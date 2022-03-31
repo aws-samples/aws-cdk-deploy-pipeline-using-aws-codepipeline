@@ -1,0 +1,24 @@
+{
+    "Project": {
+        "Name": "Pipeline",
+        "Stage": "Sample2",
+        "Account": "75157*******",
+        "Region": "us-east-2",
+        "Profile": "cdk-demo"
+    },
+
+    "Stack": {
+        "Sample2Service1": {
+            "Name": "Sample2Service1Stack"
+        },
+        "Sample2Service2": {
+            "Name": "Sample2Service2Stack"
+        },
+        "Sample2Service3": {
+            "Name": "Sample2Service3Stack"
+        },
+        "Sample2Pipeline": {
+            "Name": "Sample2PipelineStack"
+        }
+    }
+}
