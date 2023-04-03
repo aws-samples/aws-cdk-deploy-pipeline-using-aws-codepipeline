@@ -745,7 +745,7 @@ You can deploy each test/prod stage to the difference account/region. Mostly the
 }
 ```
 
-In here, ```app-config-sample3-test.json```'s destination is A-account, ```config/app-config-sample3-prod-cross.json```'s destination is ```B-account```. And ```BuildAssumeRoleArn``` option is added, where the ```assume-role``` must have a minimu policy for a target Stack deployment, and the role must be set to trust the account where the pipeline is ready.
+In here, ```app-config-sample3-test.json```'s destination is A-account, ```config/app-config-sample3-prod-cross.json```'s destination is ```B-account```. And ```BuildAssumeRoleArn``` option is added, where the ```assume-role``` must have a minimal policy for a target Stack deployment, and the role must be set to trust the account where the pipeline is ready.
 
 As shown in the following figure, temporary credentials are internally created using AWS STS to access the account.
 
