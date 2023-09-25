@@ -1,5 +1,5 @@
 {
-  "name": "cdk-deploy-pipeline",
+  "name": "@aws-samples/cdk-deploy-pipeline",
   "version": "0.1.0",
   "bin": {
     "cdk-deploy-pipeline": "infra/app-main.js"
